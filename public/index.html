@@ -5,35 +5,60 @@
   <title>Digital Archive</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0e0e0e;
+      font-family: 'Inter', sans-serif;
+      background: #0d0d0d;
       color: #eaeaea;
       text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Subtle Grain Texture */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+      opacity: 0.08;
+      pointer-events: none;
+      z-index: 0;
     }
 
     header {
-      padding: 60px 20px 40px;
-      border-bottom: 1px solid #222;
+      padding: 80px 20px 40px;
+      border-bottom: 1px solid #1a1a1a;
+      position: relative;
+      z-index: 1;
     }
 
     h1 {
       margin: 0;
-      font-size: 28px;
-      font-weight: 500;
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      font-weight: 600;
       letter-spacing: 1px;
     }
 
     main {
-      padding: 100px 20px;
+      padding: 120px 20px;
       max-width: 800px;
       margin: auto;
+      position: relative;
+      z-index: 1;
     }
 
     h2 {
-      font-size: 34px;
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
       margin-bottom: 20px;
       font-weight: 500;
     }
@@ -41,32 +66,37 @@
     p {
       color: #aaa;
       margin-bottom: 60px;
+      font-weight: 300;
     }
 
     .card {
-      background: #151515;
-      padding: 40px;
-      margin-bottom: 40px;
-      border-radius: 8px;
-      border: 1px solid #222;
+      background: rgba(20, 20, 20, 0.8);
+      padding: 50px;
+      margin-bottom: 50px;
+      border-radius: 10px;
+      border: 1px solid #1f1f1f;
       transition: 0.3s ease;
+      backdrop-filter: blur(4px);
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      border-color: #444;
+      transform: translateY(-6px);
+      border-color: #333;
     }
 
     .card h3 {
+      font-family: 'Playfair Display', serif;
       margin-top: 0;
       font-weight: 500;
     }
 
     footer {
-      padding: 60px 20px;
-      border-top: 1px solid #222;
+      padding: 80px 20px;
+      border-top: 1px solid #1a1a1a;
       font-size: 14px;
       color: #777;
+      position: relative;
+      z-index: 1;
     }
   </style>
 </head>

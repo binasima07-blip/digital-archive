@@ -3,40 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <title>Digital Archive</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    header {
+      padding: 40px 60px;
+      border-bottom: 1px solid #ddd;
+      background: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #555;
+      margin-right: 20px;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 80px 60px;
+      max-width: 900px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      padding: 40px 60px;
+      border-top: 1px solid #ddd;
+      background: white;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
 
-<header class="site-header">
-  <h1 class="logo">Digital Archive</h1>
-  <nav class="main-nav">
-    <a href="/public/index.html">Home</a>
-    <a href="/private/index.html">Private</a>
+<header>
+  <h1>Digital Archive</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Private</a>
   </nav>
 </header>
 
-<main class="content">
+<main>
+  <h2>Your Digital Archive</h2>
+  <p>Explore magazines, memories, and curated collections.</p>
 
-  <section class="hero">
-    <h2>Your Digital Archive</h2>
-    <p>Explore magazines, memories, and personal collections.</p>
-  </section>
+  <div class="card">
+    <h3>Album 01</h3>
+    <p>Coming soon...</p>
+  </div>
 
-  <section class="featured">
-    <div class="card">
-      <h3>Album 01</h3>
-      <p>Coming soon...</p>
-    </div>
-    <div class="card">
-      <h3>Magazine 01</h3>
-      <p>Coming soon...</p>
-    </div>
-  </section>
+  <div class="card">
+    <h3>Magazine 01</h3>
+    <p>Coming soon...</p>
+  </div>
 
 </main>
 
-<footer class="site-footer">
-  <p>© 2025 Digital Archive</p>
+<footer>
+  © 2025 Digital Archive
 </footer>
 
 </body>
